@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172b3a">
+  <meta name="description" content="Censo 2022: cómo se registró a los pueblos indígenas y a la diversidad sexual y de género en Argentina, y qué reclamos siguen vigentes.">
+  <title>¿Lo que no se mide, existe?</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="progress-track" aria-hidden="true">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- Encabezado fijo: cambia de color según el fondo y muestra el capítulo actual.
+       (El nombre "Observatorio" se sacó; queda pendiente qué va acá.) -->
+  <header class="topbar on-dark" id="topbar">
+    <span class="top-note" id="chapterLabel">ARGENTINA · CENSO 2022</span>
+  </header>
+
+  <main>
+    <!-- 01 · PORTADA -->
+    <section class="hero section" id="inicio" data-tone="dark" data-chapter="ARGENTINA · CENSO 2022">
+      <div class="hero-text reveal">
+        <p class="eyebrow">
+          <span class="dot"></span>
+          CENSO 2022 · ARGENTINA
+        </p>
+
+        <h1>¿Lo que no se mide, <em>existe</em>?</h1>
+
+        <p class="hero-lead">
+          Detrás de cada dato, hay personas, territorios y derechos.
+        </p>
+
+        <a class="scroll-cue" href="#introduccion">
+          <span class="scroll-line"></span>
+          DESLIZÁ PARA EXPLORAR
+        </a>
+      </div>
+
+      <div class="hero-art reveal" role="img" aria-label="Composición abstracta que representa capas de datos y territorio">
+        <div class="art-grid"></div>
+        <!-- Capa que se agranda y gira con el scroll -->
+        <div class="art-orbit">
+          <div class="art-circle circle-one"></div>
+          <div class="art-circle circle-two"></div>
+          <div class="art-cross">+</div>
+        </div>
+        <div class="art-label label-top">LO QUE CONTAMOS</div>
+        <div class="art-label label-bottom">LO QUE QUEDA AFUERA</div>
+        <div class="art-caption">DATOS · IDENTIDAD · RECONOCIMIENTO</div>
+      </div>
+
+      <div class="hero-foot">
+        <span>01 / 10</span>
+        <span>UNA PREGUNTA SOBRE LA VISIBILIDAD</span>
+      </div>
+    </section>
+
+    <!-- 02 · INTRODUCCIÓN -->
+    <section class="intro section" id="introduccion" data-tone="light" data-chapter="02 · INTRODUCCIÓN">
+      <div class="section-kicker reveal">
+        <span>02</span>
+        <span>INTRODUCCIÓN</span>
+      </div>
+
+      <div class="intro-grid">
+        <p class="intro-lead reveal">
+          Durante mucho tiempo, distintos grupos de la sociedad argentina
+          quedaron <strong>invisibilizados</strong> en las estadísticas
+          oficiales. Sin embargo, los cambios en los cuestionarios censales
+          permitieron incorporar nuevas preguntas y reconocer realidades que
+          antes no estaban suficientemente representadas.
+        </p>
+
+        <p class="intro-body reveal">
+          El Censo Nacional de Población no es solamente un recuento de
+          habitantes. Es una herramienta que permite conocer cómo está
+          compuesta la sociedad, dónde vive la población y cuáles son sus
+          condiciones de vida.
+        </p>
+      </div>
+    </section>
+
+    <!-- 02 · FRASE CLAVE (se fija en pantalla y las palabras se encienden) -->
+    <section class="bridge section" id="frase" data-tone="light" data-chapter="02 · INTRODUCCIÓN">
+      <p class="bridge-text" id="bridgeText">
+        <strong>Las personas y sus identidades existen independientemente
+        de que el Estado las registre.</strong>
+        <em>Lo que puede producirse es una situación de invisibilidad
+        estadística e institucional.</em>
+      </p>
+
+      <div class="bridge-rule"></div>
+    </section>
+
+    <!-- 03 · ¿POR QUÉ ES IMPORTANTE EL CENSO? (los ítems aparecen de a uno) -->
+    <section class="why section" id="por-que" data-tone="light" data-chapter="03 · ¿POR QUÉ IMPORTA?">
+      <div class="section-kicker reveal">
+        <span>03</span>
+        <span>¿POR QUÉ IMPORTA QUE EL ESTADO CUENTE A UNA POBLACIÓN?</span>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-head reveal">
+          <h2>¿Por qué es importante el <em>censo</em>?</h2>
+          <p class="why-sub">Porque la información estadística permite:</p>
+        </div>
+
+        <ol class="why-list">
+          <li class="why-item reveal"><span class="why-num">01</span><span>Identificar desigualdades sociales.</span></li>
+          <li class="why-item reveal"><span class="why-num">02</span><span>Conocer las necesidades de diferentes comunidades.</span></li>
+          <li class="why-item reveal"><span class="why-num">03</span><span>Diseñar políticas públicas.</span></li>
+          <li class="why-item reveal"><span class="why-num">04</span><span>Distribuir recursos y servicios.</span></li>
+          <li class="why-item reveal"><span class="why-num">05</span><span>Reconocer demandas históricas.</span></li>
+          <li class="why-item reveal"><span class="why-num">06</span><span>Producir información para garantizar derechos.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 04 · GRÁFICO 1 (pendiente de decisión) -->
+    <section class="g1 section" id="grafico-1" data-tone="light" data-chapter="04 · LO ACTUAL">
+      <div class="section-kicker reveal">
+        <span>04</span>
+        <span>LO ACTUAL / CENSO 2022</span>
+      </div>
+
+      <div class="g1-grid">
+        <div class="g1-text reveal">
+          <p class="eyebrow">UN AVANCE EN LA FORMA DE CONTAR</p>
+          <p class="g1-lead">
+            El Censo 2022 marcó un avance en la manera en que Argentina
+            registra la diversidad de su población. Por primera vez, el
+            Estado incorporó una pregunta específica sobre identidad de
+            género y amplió el relevamiento de las poblaciones indígenas.
+          </p>
+        </div>
+
+        <!-- [GRAFICO_1] Contenido controlado desde script.js (GRAFICO_1).
+             Mientras no haya imágenes, se muestra este espacio reservado. -->
+        <div class="chart-card g1-card reveal">
+          <div class="chart-head">
+            <span class="chart-index">GRÁFICO 01</span>
+            <span class="chart-tag">PENDIENTE DE DECISIÓN</span>
+          </div>
+          <div class="g1-stage" id="grafico1">
+            <div class="chart-placeholder">
+              <span class="ph-code">[GRAFICO_1]</span>
+              <span>Espacio reservado para el Gráfico 1.</span>
+              <span class="ph-small">Pendiente: imágenes originales.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 · POBLACIONES: PUEBLOS INDÍGENAS (scrollytelling) -->
+    <section class="scrolly section" id="pueblos" data-tone="light" data-chapter="05 · PUEBLOS INDÍGENAS">
+      <div class="section-kicker reveal">
+        <span>05</span>
+        <span>¿QUIÉNES SON LAS POBLACIONES QUE HOY REGISTRA EL ESTADO?</span>
+      </div>
+
+      <div class="scrolly-grid">
+        <!-- Gráfico que queda fijo mientras pasan los pasos -->
+        <div class="scrolly-sticky">
+          <div class="sticky-inner">
+            <div class="chart-card">
+              <div class="chart-head">
+                <span class="chart-index">GRÁFICO 02</span>
+                <span class="chart-tag">PUEBLOS INDÍGENAS</span>
+              </div>
+
+              <h3>¿Dónde se concentra esta población?</h3>
+
+              <p class="chart-sub">
+                Porcentaje de la población de cada provincia que se reconoce
+                indígena · Censo 2022
+              </p>
+
+              <!-- data-step indica en qué paso del relato aparece cada barra -->
+              <div class="bar-chart" data-format="percent">
+                <div class="bar-row" data-step="2">
+                  <div class="bar-label">Jujuy</div>
+                  <div class="bar-track"><div class="bar-fill" data-value="10.1"></div></div>
+                  <div class="bar-value">10,1%</div>
+                </div>
+
+                <div class="bar-row" data-step="3">
+                  <div class="bar-label">Salta</div>
+                  <div class="bar-track"><div class="bar-fill" data-value="10"></div></div>
+                  <div class="bar-value">10%</div>
+                </div>
+
+                <div class="bar-row" data-step="4">
+                  <div class="bar-label">Chubut</div>
+                  <div class="bar-track"><div class="bar-fill" data-value="7.9"></div></div>
+                  <div class="bar-value">7,9%</div>
+                </div>
+
+                <div class="bar-row" data-step="4">
+                  <div class="bar-label">Formosa</div>
+                  <div class="bar-track"><div class="bar-fill" data-value="7.8"></div></div>
+                  <div class="bar-value">7,8%</div>
+                </div>
+
+                <div class="bar-row" data-step="4">
+                  <div class="bar-label">Neuquén</div>
+                  <div class="bar-track"><div class="bar-fill" data-value="7.7"></div></div>
+                  <div class="bar-value">7,7%</div>
+                </div>
+              </div>
+
+              <p class="chart-note">
+                El largo de cada barra compara las provincias mostradas entre sí.
+              </p>
+
+              <p class="source-small">
+                Fuente: INDEC, Censo Nacional de Población, Hogares y Viviendas
+                2022.
+                <a href="https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_poblacion_indigena.pdf"
+                   target="_blank" rel="noreferrer">
+                  Consultar informe
+                </a>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pasos del relato: cada uno activa un estado del gráfico -->
+        <div class="scrolly-steps">
+          <div class="step">
+            <div class="step-card">
+              <p class="eyebrow">PUEBLOS INDÍGENAS</p>
+              <p class="step-big">
+                <strong>1.306.730</strong> personas se reconocieron indígenas
+                o descendientes de pueblos indígenas en el Censo 2022.
+              </p>
+              <p>
+                Representan el <strong>2,9%</strong> de la población en
+                viviendas particulares.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-card">
+              <p class="step-num">¿DÓNDE SE CONCENTRA ESTA POBLACIÓN?</p>
+              <!-- REVISAR: la frase del PDF no tiene sujeto ("pueden mostrar"). Se dejó tal cual. -->
+              <p>
+                En el caso de los pueblos indígenas, pueden mostrar que no se
+                distribuyen de manera uniforme en el territorio argentino.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-card">
+              <p class="step-num">JUJUY</p>
+              <p class="step-big">
+                <strong>10,1%</strong> de su población se reconoce indígena.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-card">
+              <p class="step-num">SALTA</p>
+              <p class="step-big"><strong>10%</strong>.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-card">
+              <p class="step-num">CHUBUT · FORMOSA · NEUQUÉN</p>
+              <p class="step-big">
+                Chubut: <strong>7,9%</strong>.<br>
+                Formosa: <strong>7,8%</strong>.<br>
+                Neuquén: <strong>7,7%</strong>.
+              </p>
+              <a class="source-link"
+                 href="https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_poblacion_indigena.pdf"
+                 target="_blank" rel="noreferrer">
+                FUENTE: INDEC · CENSO 2022 ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 · POBLACIONES: DIVERSIDAD SEXUAL Y DE GÉNERO (scrollytelling) -->
+    <section class="scrolly reverse section" id="diversidad" data-tone="light" data-chapter="06 · DIVERSIDAD SEXUAL Y DE GÉNERO">
+      <div class="section-kicker reveal">
+        <span>06</span>
+        <span>DIVERSIDAD SEXUAL Y DE GÉNERO</span>
+      </div>
+
+      <div class="scrolly-grid">
+        <div class="scrolly-sticky">
+          <div class="sticky-inner">
+            <div class="chart-card">
+              <div class="chart-head">
+                <span class="chart-index">GRÁFICO 03</span>
+                <span class="chart-tag">CENSO 2022</span>
+              </div>
+
+              <h3>Diversidad sexual y de género</h3>
+
+              <p class="chart-sub">Cantidad de personas · Censo 2022</p>
+
+              <div class="bar-chart" data-format="number">
+                <div class="bar-row" data-step="1">
+                  <div class="bar-label">Varones trans</div>
+                  <div class="bar-track"><div class="bar-fill coral" data-value="72510"></div></div>
+                  <div class="bar-value">72.510</div>
+                </div>
+
+                <div class="bar-row" data-step="2">
+                  <div class="bar-label">Mujeres trans / travestis</div>
+                  <div class="bar-track"><div class="bar-fill coral" data-value="60679"></div></div>
+                  <div class="bar-value">60.679</div>
+                </div>
+
+                <div class="bar-row" data-step="3">
+                  <div class="bar-label">Personas no binarias</div>
+                  <div class="bar-track"><div class="bar-fill coral" data-value="37330"></div></div>
+                  <div class="bar-value">37.330</div>
+                </div>
+              </div>
+
+              <!-- Nota obligatoria (CLAUDE.md): las subcategorías no se suman
+                   ni se presentan como el total. -->
+              <p class="chart-note verify-note">
+                Cifras en verificación con INDEC.
+              </p>
+
+              <p class="source-small">
+                Fuente: INDEC, Censo 2022.
+                <a href="https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_identidad_genero.pdf"
+                   target="_blank" rel="noreferrer">
+                  Consultar informe y metodología
+                </a>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scrolly-steps">
+          <div class="step">
+            <div class="step-card">
+              <p class="eyebrow">DIVERSIDAD SEXUAL Y DE GÉNERO</p>
+              <!-- REVISAR: redacción marcada en el PDF; confirmar con el texto del INDEC. -->
+              <p class="step-big">
+                <strong>196.956</strong> personas declararon no identificarse
+                con el sexo registrado al nacer.
+              </p>
+              <p>Representan el <strong>0,4%</strong> de la población censada.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-card">
+              <p class="step-num">DENTRO DE ESE TOTAL</p>
+              <p class="step-big"><strong>72.510</strong> varones trans.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-card">
+              <p class="step-num">DENTRO DE ESE TOTAL</p>
+              <p class="step-big"><strong>60.679</strong> mujeres trans/travestis.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-card">
+              <p class="step-num">DENTRO DE ESE TOTAL</p>
+              <p class="step-big"><strong>37.330</strong> personas no binarias.</p>
+              <p class="verify-inline">Cifras en verificación con INDEC.</p>
+              <a class="source-link"
+                 href="https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_identidad_genero.pdf"
+                 target="_blank" rel="noreferrer">
+                FUENTE: INDEC · IDENTIDAD DE GÉNERO ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 · SI NO SE MIDE, SE DESCONOCE: RECLAMOS DE LOS PUEBLOS INDÍGENAS -->
+    <section class="claims section" id="reclamos-indigenas" data-tone="light" data-chapter="07 · SI NO SE MIDE, SE DESCONOCE">
+      <div class="section-kicker reveal">
+        <span>07</span>
+        <span>LO QUE EL ESTADO EMPEZÓ A CONTAR VS. LO QUE LAS POBLACIONES SIGUEN RECLAMANDO</span>
+      </div>
+
+      <div class="claims-head reveal">
+        <h2>Si no se mide, <em>se desconoce.</em></h2>
+        <p>
+          Aunque el reconocimiento de los pueblos indígenas forma parte de las
+          estadísticas oficiales, sus comunidades continúan enfrentando
+          conflictos y reclamando derechos que todavía no están plenamente
+          garantizados.
+        </p>
+      </div>
+
+      <ol class="claims-grid">
+        <li class="claim reveal">
+          <span class="claim-num">01</span>
+          <span class="claim-label">TERRITORIO</span>
+          <p>
+            Uno de los principales reclamos está relacionado con
+            <strong>el territorio</strong>. Muchas comunidades exigen el
+            reconocimiento de sus tierras ancestrales, la protección de sus
+            territorios y el respeto por la propiedad comunitaria. Los
+            conflictos por desalojos y ocupaciones siguen presentes en
+            distintas provincias del país.
+          </p>
+        </li>
+
+        <li class="claim reveal">
+          <span class="claim-num">02</span>
+          <span class="claim-label">RECURSOS NATURALES</span>
+          <p>
+            También reclaman <strong>el acceso y la protección de los recursos
+            naturales</strong>, especialmente el agua y los territorios frente
+            a actividades extractivas, mineras y agropecuarias que pueden
+            afectar sus formas de vida.
+          </p>
+        </li>
+
+        <li class="claim reveal">
+          <span class="claim-num">03</span>
+          <span class="claim-label">EDUCACIÓN INTERCULTURAL BILINGÜE</span>
+          <p>
+            Otro eje fundamental es <strong>la educación intercultural
+            bilingüe</strong>. Las comunidades buscan preservar sus lenguas
+            originarias, transmitir sus conocimientos y lograr que sus
+            identidades culturales sean respetadas e incorporadas en el
+            sistema educativo.
+          </p>
+        </li>
+
+        <li class="claim reveal">
+          <span class="claim-num">04</span>
+          <span class="claim-label">CONSULTA PREVIA Y PARTICIPACIÓN</span>
+          <p>
+            Por último, exigen <strong>mayor reconocimiento y participación en
+            las decisiones que las afectan</strong>. Esto implica que el Estado
+            garantice mecanismos de consulta previa, libre e informada antes de
+            implementar medidas o proyectos que puedan impactar sobre sus
+            comunidades y territorios.
+          </p>
+        </li>
+      </ol>
+
+      <!-- VIDEO 1 -->
+      <figure class="video-wide reveal">
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/6gr1g9DZEA0"
+            title="Poblaciones indígenas en Salta cuentan las problemáticas que enfrentan (ONU Argentina)"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+        <figcaption>
+          <span class="video-tag">VIDEO 1 · ONU ARGENTINA</span>
+          <strong>Poblaciones indígenas en Salta cuentan las problemáticas que enfrentan</strong>
+          <span class="video-desc">
+            Testimonios de poblaciones indígenas de Salta sobre las
+            problemáticas que enfrentan.
+            <span class="pendiente">Resumen pendiente</span>
+          </span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- 08 · RECLAMOS DE LA DIVERSIDAD + VIDEO 2 (short vertical que acompaña el scroll) -->
+    <section class="vscrolly section" id="reclamos-diversidad" data-tone="light" data-chapter="08 · RESPECTO DE LA DIVERSIDAD">
+      <div class="section-kicker reveal">
+        <span>08</span>
+        <span>RESPECTO DE LA DIVERSIDAD</span>
+      </div>
+
+      <div class="vscrolly-grid">
+        <div class="vscrolly-steps">
+          <div class="vstep" data-label="TRABAJO">
+            <div class="step-card">
+              <p class="step-num">01 · TRABAJO</p>
+              <p>
+                Uno de los principales reclamos está relacionado con
+                <strong>el acceso al trabajo</strong>. Las personas trans y
+                travestis continúan enfrentando mayores dificultades para
+                ingresar al mercado laboral, conseguir empleos formales y
+                permanecer en ellos sin sufrir discriminación. Por eso,
+                reclaman oportunidades laborales reales y el cumplimiento de
+                políticas de inclusión.
+              </p>
+            </div>
+          </div>
+
+          <div class="vstep" data-label="EDUCACIÓN">
+            <div class="step-card">
+              <p class="step-num">02 · EDUCACIÓN</p>
+              <p>
+                También persisten situaciones de <strong>discriminación en el
+                ámbito educativo</strong>. El rechazo, las agresiones y la falta
+                de acompañamiento institucional pueden afectar las trayectorias
+                educativas. El reclamo apunta a garantizar espacios seguros,
+                respetuosos y libres de violencia.
+              </p>
+            </div>
+          </div>
+
+          <div class="vstep" data-label="SALUD">
+            <div class="step-card">
+              <p class="step-num">03 · SALUD</p>
+              <p>
+                Otro eje fundamental es <strong>el acceso a la salud
+                integral</strong>. Las personas de la diversidad reclaman
+                atención médica sin prejuicios ni prácticas discriminatorias,
+                respeto por sus identidades y continuidad en los tratamientos y
+                prestaciones contemplados por la Ley de Identidad de Género.
+              </p>
+            </div>
+          </div>
+
+          <div class="vstep" data-label="IGUALDAD DE TRATO">
+            <div class="step-card">
+              <p class="step-num">04 · IGUALDAD DE TRATO</p>
+              <p>
+                Por último, exigen <strong>igualdad de trato y reconocimiento
+                social</strong>. Esto implica que su identidad no sea motivo de
+                exclusión, violencia o limitación de oportunidades en ningún
+                ámbito de la vida cotidiana.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIDEO 2: short vertical, queda fijo al costado mientras pasan los ejes -->
+        <aside class="phone-col">
+          <figure class="phone">
+            <div class="phone-frame">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/rLXTfJFd2hE"
+                title="Cupo Laboral Travesti Trans: la historia de Fernando (Ministerio de las Mujeres, Géneros y Diversidad)"
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+            <div class="phone-status" aria-hidden="true">
+              <span class="phone-dots">
+                <i></i><i></i><i></i><i></i>
+              </span>
+              <span id="phoneLabel">TRABAJO</span>
+            </div>
+            <figcaption>
+              <span class="video-tag">VIDEO 2 · MINISTERIO DE LAS MUJERES, GÉNEROS Y DIVERSIDAD</span>
+              <strong>Cupo Laboral Travesti Trans: la historia de Fernando</strong>
+              <span class="video-desc">
+                Video sobre el Cupo Laboral Travesti Trans a partir de la
+                historia de Fernando.
+                <span class="pendiente">Resumen pendiente</span>
+              </span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 09 · CONSECUENCIAS -->
+    <section class="conseq section" id="consecuencias" data-tone="light" data-chapter="09 · CONSECUENCIAS">
+      <div class="section-kicker reveal">
+        <span>09</span>
+        <span>CONSECUENCIAS</span>
+      </div>
+
+      <div class="conseq-head reveal">
+        <h2>¿Qué ocurre cuando una identidad no aparece en las <em>estadísticas</em>?</h2>
+        <p>No contar a una población puede generar consecuencias concretas:</p>
+      </div>
+
+      <ol class="conseq-list">
+        <li class="conseq-item reveal">
+          <span class="conseq-num">1</span>
+          <div class="conseq-body">
+            <span class="conseq-line"></span>
+            <h3>Invisibilidad institucional</h3>
+            <p>Las necesidades de determinados grupos pueden quedar fuera de los diagnósticos oficiales.</p>
+          </div>
+        </li>
+
+        <li class="conseq-item reveal">
+          <span class="conseq-num">2</span>
+          <div class="conseq-body">
+            <span class="conseq-line"></span>
+            <h3>Falta de información</h3>
+            <p>Resulta más difícil conocer las desigualdades que atraviesan.</p>
+          </div>
+        </li>
+
+        <li class="conseq-item reveal">
+          <span class="conseq-num">3</span>
+          <div class="conseq-body">
+            <span class="conseq-line"></span>
+            <h3>Dificultades para planificar políticas públicas</h3>
+            <p>Sin información suficiente, el Estado cuenta con menos herramientas para diseñar respuestas.</p>
+          </div>
+        </li>
+
+        <li class="conseq-item reveal">
+          <span class="conseq-num">4</span>
+          <div class="conseq-body">
+            <span class="conseq-line"></span>
+            <h3>Reproducción de desigualdades</h3>
+            <p>Aquello que no se identifica estadísticamente puede continuar sin recibir la atención necesaria.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 10 · CONCLUSIÓN Y FUENTES -->
+    <section class="closing section" id="cierre" data-tone="dark" data-chapter="10 · CONCLUSIÓN">
+      <div class="closing-mark reveal">10 / CONCLUSIÓN</div>
+
+      <div class="closing-content">
+        <p class="reveal">
+          El Censo 2022 marcó un avance en la forma de registrar la diversidad
+          de la sociedad argentina. Permitió que realidades históricamente
+          invisibilizadas tuvieran una mayor presencia en las estadísticas
+          oficiales.
+        </p>
+
+        <p class="reveal">
+          Pero detrás de cada número siguen existiendo historias, reclamos y
+          derechos pendientes.
+        </p>
+
+        <h2 class="reveal">
+          Medir también
+          <br>
+          es <em>reconocer.</em>
+        </h2>
+
+        <p class="reveal">
+          Porque lo que se cuenta influye en lo que el Estado ve, en las
+          necesidades que identifica y en las políticas que puede diseñar.
+        </p>
+
+        <p class="reveal">
+          Sin embargo, el desafío no termina cuando una identidad aparece en
+          un formulario.
+        </p>
+
+        <p class="final-question reveal">
+          ¿Alcanza con ser contado o también es necesario ser
+          <em>escuchado</em>?
+        </p>
+      </div>
+
+      <div class="sources reveal" id="fuentes">
+        <p class="eyebrow">FUENTES</p>
+        <ul>
+          <li>
+            INDEC: Censo Nacional de Población, Hogares y Viviendas 2022
+            (<a href="https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_poblacion_indigena.pdf" target="_blank" rel="noreferrer">población indígena</a>,
+            <a href="https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_identidad_genero.pdf" target="_blank" rel="noreferrer">identidad de género</a>).
+          </li>
+          <li>CIDH.</li>
+          <li>
+            Ministerio de las Mujeres, Géneros y Diversidad. Encuestas y
+            relevamientos sobre las condiciones de vida de la población LGBTI+.
+          </li>
+          <li>INAI.</li>
+          <li>
+            Testimonios de YouTube:
+            <a href="https://www.youtube.com/watch?v=6gr1g9DZEA0" target="_blank" rel="noreferrer">“Poblaciones indígenas en Salta cuentan las problemáticas que enfrentan”</a>,
+            ONU Argentina.
+            <span class="pendiente">Fecha pendiente</span>
+            ·
+            <a href="https://www.youtube.com/shorts/rLXTfJFd2hE" target="_blank" rel="noreferrer">“Cupo Laboral Travesti Trans: la historia de Fernando”</a>,
+            Ministerio de las Mujeres, Géneros y Diversidad.
+            <span class="pendiente">Fecha pendiente</span>
+          </li>
+        </ul>
+
+        <a class="back-top" href="#inicio">VOLVER AL INICIO ↑</a>
+      </div>
+
+      <footer class="footer">
+        <span>¿LO QUE NO SE MIDE, EXISTE?</span>
+        <span>PROYECTO EDUCATIVO · ARGENTINA</span>
+        <span>Datos: INDEC, Censo 2022</span>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
